@@ -1,0 +1,318 @@
+<!--Desarrolado por Fernando Juárez Aldorica-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>House Of Comic MX | Home</title>
+
+	<!--Estilos-->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<style>
+		.datosGeek{
+			position: relative;
+			width:100%;
+			height:100%;
+			background:var(--blanco);
+		}
+	</style>	
+
+	<!--Fuentes-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--Ir Arriba | Inicio-->
+	<div class="home">
+		<span>
+			<i class="fas fa-level-up-alt"></i>
+		</span>
+	</div>
+	<!--Ir Arriba | Fin-->
+
+	<!--Menu Navegación | Inicio-->
+	<header id="header">
+
+		<!--Menu Superior-->
+		<nav class="menu">
+			<div class="logoBox">
+				<h1>
+					<a href="#">HoCMX</a>
+				</h1>
+
+				<!--Icono Menu Responsivo-->
+				<span class="botonResponsivo">
+					<i class="fas fa-caret-square-down"></i>
+				</span>
+			</div>
+
+			<!--Lista Menu-->
+			<div class="contenedorLista">
+				<ul class="listaLinks">
+					<li>
+						<a href="#" class="activado">Home</a>
+					</li>
+					<li>
+						<a href="#productos">Productos</a>
+					</li>
+					<!--<li>
+						<a href="#">Multimedia</a>
+					</li>-->
+					<li>
+						<a href="#datos">Datos Geek</a>
+					</li>
+					<li>
+						<a href="#nosotros">Nosotros</a>
+					</li>
+					<!--<li>
+						<a href="#contacto">Contacto</a>
+					</li>-->
+					<li>
+						<!--Instagram-->
+						<a href="https://www.instagram.com/houseofcomicgeekstore/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+						<!--Facebook-->
+						<a href="https://www.facebook.com/houseofcomic24/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+
+						<!--Twitter-->
+						<a href="https://twitter.com/houseofcomicmx" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
+						<!--Tiktok-->
+						<a href="https://www.tiktok.com/@houseofcomicmx" target="_blank"><i class="fab fa-tiktok"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--IMG Bienvenida-->
+		<div class="imgBienvenida">
+
+			<!--Texto de Bienvenida-->
+			<div class="bienvenida">
+				<h1>Bienvenidos</h1>
+				<hr>
+				<p>Tienda de Artículos Geek</p>
+			</div>
+		</div>
+
+		<!--Efecto Diagonal-->
+		<div class="diagonalAbajoRojoClaro"></div>
+	</header>
+	<!--Menu Navegación | Fin-->
+
+
+	<!--Contenedor de toda la información de la Wweb-->
+	<main>
+		<!--Sección Productos | Inicio-->
+		<section class="productos" id='productos'>
+			<div class="contenedorProductos">
+
+				<!--Titulo-->
+				<div class="tituloProductos">
+					<h2>Productos</h2>
+					<hr>
+				</div>
+
+				<!--Categorias Productos-->
+				<div class="imgCategorias">
+					<img id='playeraHombre' onmouseover="cambioIMGHombre()" onmouseout='regresoIMGHombre()' onclick='linkHombre()' src="img/catProductos/01.jpg" alt="Playeras para Hombre">
+
+					<img id='playeraMujer' onmouseover="cambioIMGMujer()" onmouseout='regresoIMGMujer()' onclick='linkMujer()' src="img/catProductos/02.jpg" alt="Playeras para Mujer">
+
+					<img id='playeraNiño' onmouseover='cambioIMGNiño()' onmouseout='regresoIMGNiño()' onclick='linkNiño()' src="img/catProductos/03.jpg" alt="Playeras para Niño">
+
+					<img id='paqueteComics' onmouseover='cambioIMGPaquete()' onmouseout='regresoIMGPaquete()' onclick='linkPaquete()' src="img/catProductos/04.jpg" alt="Paquetes de Comics">
+
+					<img id='firmados' onmouseover='cambioIMGFirmados()' onmouseout='regresoIMGFirmados()' onclick='linkFirmados()' src="img/catProductos/05.jpg" alt="Comics Firmados">
+
+					<img id='marvel' onmouseover="cambioIMGMarvel()" onmouseout="regresoIMGMarvel()" onclick="linkMarvel()" src="img/catProductos/06.jpg" alt="Comics de Marvel">
+
+					<img id='dc' onmouseover="cambioIMGDC()" onmouseout="regresoIMGDC()" onclick="linkDC()" src="img/catProductos/07.jpg" alt="Comics de DC">
+
+					<img id='mangas' onmouseover="cambioIMGMangas()" onmouseout="regresoIMGMangas()" onclick="linkMangas()" src="img/catProductos/08.jpg" alt="Mangas">
+
+					<img id='videojuegos' onmouseover="cambioIMGVideojuegos()" onmouseout="regresoIMGVideojuegos()" onclick="linkVideojuegos()" src="img/catProductos/09.jpg" alt="Videojuegos">
+
+					<img id='coleccionables' onmouseover="cambioIMGColeccionables()" onmouseout='regresoIMGColeccionables()' onclick="linkColeccionables()" src="img/catProductos/10.jpg" alt="Coleccionables">
+				</div>
+			</div>
+
+			<!--Efecto Diagonal-->
+			<div class="diagonalAbajoBlanco"></div>
+		</section>
+		<!--Sección Productos | Fin-->
+
+		<!--Datos Geek | Inicio-->
+		<section class="datosGeek" id='datos'>
+			<div class="contenedorDatos">
+				
+				<!--Titulo Datos-->
+				<div class="tituloDatos">
+					<h2>Datos Geek</h2>
+					<hr>
+				</div>
+
+				<!--Tarjetas Datos-->
+				<div class="contenedorTarjetas">
+
+					<!--Objeto Datos-->
+					<div class="tarjetaDatos">
+						<div class="tarjetaImg">
+							<img id='redSkull' onmouseover="cambioIMGDato1()" onmouseout="regresoIMGDato1()" src="img/imgDatos/01.jpg" alt="Red Skull">
+						</div>
+						<div class="textoDatos">
+							<h4>Red Skull</h4>
+							<p>El villano líde de Hydra es el culpable de la muerte de los padres de Peter Parker.</p>
+						</div>
+					</div>
+
+					<!--Objeto Datos-->
+					<div class="tarjetaDatos">
+						<div class="tarjetaImg">
+							<img id='deadpool' onmouseover="cambioIMGDato2()" onmouseout="regresoIMGDato2()" src="img/imgDatos/02.jpg" alt="Tom Cruise">
+						</div>
+						<div class="textoDatos">
+							<h4>Tom Cruise</h4>
+							<p>Loki cambio el rostro de Wade Wilson (Deadpool), por el del famoso actor Tom Cruise.</p>
+						</div>
+					</div>
+
+					<!--Objeto Datos-->
+					<div class="tarjetaDatos">
+						<div class="tarjetaImg">
+							<img id='sting' onmouseover="cambioIMGDato3()" onmouseout="regresoIMGDato3()" src="img/imgDatos/03.jpg" alt="Sting">
+						</div>
+						<div class="textoDatos">
+							<h4>Sting</h4>
+							<p>La imagen del personaje John Constantine esta basda en la imagen del cantante Sting.</p>
+						</div>
+					</div>
+
+					<!--Objeto Datos-->
+					<div class="tarjetaDatos">
+						<div class="tarjetaImg">
+							<img id='play' onmouseover="cambioIMGDato4()" onmouseout="regresoIMGDato4()" src="img/imgDatos/04.jpg" alt="Nintendo Station">
+						</div>
+						<div class="textoDatos">
+							<h4>Nintendo Station</h4>
+							<p>En un inicio se penso que Play Station fuera una nueva consola para Nintendo la cual haria uso de los CDs.</p>
+						</div>
+					</div>
+
+					<!--Objeto Datos-->
+					<div class="tarjetaDatos">
+						<div class="tarjetaImg">
+							<img id='playStation' onmouseover="cambioIMGDato5()" onmouseout="regresoIMGDato5()" src="img/imgDatos/05.jpg" alt="Play Station">
+						</div>
+						<div class="textoDatos">
+							<h4>Play Station</h4>
+							<p>Sony creo varias versiones del logo para su consola Play Station hasta que finalmente llegar al que conocemos hoy en día.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Efecto Diagonal-->
+			<div class="diagonalAbajoRojo" ></div>
+		</section>
+		<!--Datos Geek | Fin-->
+
+		<!--Nosotros | Inicio-->
+		<section class="nosotros" id='nosotros'>
+
+			<!--Información Acerca de la Tienda-->
+			<div class="contenedorNosotros">
+				<div class="tituloNosotros">
+					<h1>Nosotros</h1>
+					<hr>
+				</div>
+
+				<!--Texto de Nosotros-->
+				<div class="textoNosotros">
+					<p>Somos una tienda Geek "De Fans Para Fans", en donde encontraras artículos que van desde Playeras hasta Comcis firmados para que hagas crecer tu colección.</p>
+
+					<p>Ten la seguridad de que los artículos que adquieras son de excelente calidad y llegaran completamente seguros a la puerta de tu casa. Puedes contactarnos en todas nuetras redes sociales.</p>
+
+					<div class="redesSociales">
+					<!--Instagram-->
+						<a href="https://www.instagram.com/houseofcomicgeekstore/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+						<!--Facebook-->
+						<a href="https://www.facebook.com/houseofcomic24/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+
+						<!--Twitter-->
+						<a href="https://twitter.com/houseofcomicmx" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
+						<!--Tiktok-->
+						<a href="https://www.tiktok.com/@houseofcomicmx" target="_blank"><i class="fab fa-tiktok"></i></a>
+					</div>
+				</div>
+
+				<!--Galeria-->
+				<div class="galeriaNosotros">
+					<img id='adriPsycho' onmouseover="adriPsycho01()" onmouseout='adriPsycho02()' onclick="linkAdriPsycho()" src="img/imgNosotros/01.jpg" alt="Chica Leyendo Comics">
+					<img id='HoC' onmouseover="HoC01()" onmouseout='HoC02()' onclick="linkHoC()" src="img/imgNosotros/03.jpg" alt="Comics">
+					<img id='KB' onmouseover="kb01()" onmouseout='kb02()' onclick="linkKB()" src="img/imgNosotros/02.jpg" alt="Chico Leyendo Comics">
+				</div>
+			</div>
+		</section>
+		<!--Nosotros | Fin-->	
+	</main>
+
+	<!--footer-->
+	<footer class='footer'>
+		<!--Efecto Diagonal-->
+			<div class="diagonalArriba" ></div>
+		<div class="degradado"></div>
+
+		<!--EjeZ-->
+		<div class="footerPrincipal" >
+			<!--<div class="contenedorFooter" id='contacto'>
+				<!--Titulo Formulario-->
+				<!--<div class="tituloFormulario">
+					<h2>Formulario de Contacto</h2>
+					<hr>
+				</div>-->
+
+				<!--Formulario-->
+				<!--<div class="contenedorFormulario">
+					<form action="" id='formulario'>
+						<label for="usar">Nombre</label>
+						<input type="text" id='user' name='user' placeholder="Escribe tu Nombre">
+
+						<label for="email">Correo Electrónico</label>
+						<input type="email" id='email' name='email' placeholder="Escribe tu Correo Electronico">
+
+						<label for="mensaje">Escribe tu Mensaje</label>
+						<textarea name="mensaje" id="mensaje"></textarea>
+
+						<div class="enviar">
+							<button onclick='clickAqui()'>Enviar</button>
+						</div>
+
+						<div class="mensajeFormulario">
+							<p>Escribenos un mensaje y en breve te responderemos.</p>
+						</div>
+					</form>
+				</div>
+			</div>-->
+
+				<!--Texto del Footer-->
+			<div class="footerTexto">
+				<p>&copy; House of Comic MX 2021 | Derechos Reservados.</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+	<!--JavaScript-->
+	<script src="https://kit.fontawesome.com/15876357fa.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<script src="js/productos.js"></script>
+	<script src="js/datos.js"></script>
+	<script src="js/nosotros.js"></script>
+</body>
+</html>
