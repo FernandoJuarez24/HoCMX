@@ -122,6 +122,9 @@
 	.imgBienvenida .bienvenida hr{
 		width: 60%;
 	}
+	.productos .contenedorProductos .tituloProductos{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 890px){
