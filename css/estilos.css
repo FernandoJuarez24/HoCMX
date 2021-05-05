@@ -387,7 +387,7 @@ body{
 	border:none;
 	outline: none;
 	font-size: 20px;
-	color:var(--rojoOscuro);
+	color:var(--rojo);
 	text-align:center;
 	margin:50px;
 	cursor: pointer;
