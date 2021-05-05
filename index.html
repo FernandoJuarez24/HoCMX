@@ -52,9 +52,9 @@
 			<!--Lista Menu-->
 			<div class="contenedorLista">
 				<ul class="listaLinks">
-					<li>
+					<!--<li>
 						<a href="#" class="activado">Home</a>
-					</li>
+					</li>-->
 					<li>
 						<a href="#productos">Productos</a>
 					</li>
@@ -67,9 +67,9 @@
 					<li>
 						<a href="#nosotros">Nosotros</a>
 					</li>
-					<!--<li>
-						<a href="#contacto">Contacto</a>
-					</li>-->
+					<li>
+						<a onclick="mail()">Contacto</a>
+					</li>
 					<li>
 						<!--Instagram-->
 						<a href="https://www.instagram.com/houseofcomicgeekstore/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -232,9 +232,11 @@
 
 				<!--Texto de Nosotros-->
 				<div class="textoNosotros">
-					<p>Somos una tienda Geek "De Fans Para Fans", en donde encontraras artículos que van desde Playeras hasta Comcis firmados para que hagas crecer tu colección.</p>
+					<p>Somos una tienda Geek "De Fans Para Fans", en donde encontraras artículos que van desde Playeras hasta Comics firmados para que hagas crecer tu colección.</p>
 
 					<p>Ten la seguridad de que los artículos que adquieras son de excelente calidad y llegaran completamente seguros a la puerta de tu casa. Puedes contactarnos en todas nuetras redes sociales.</p>
+
+					<button class="contacto" onclick="mail()">Contacto</button>
 
 					<div class="redesSociales">
 					<!--Instagram-->
@@ -314,5 +316,6 @@
 	<script src="js/productos.js"></script>
 	<script src="js/datos.js"></script>
 	<script src="js/nosotros.js"></script>
+	<script src="js/contacto.js"></script>
 </body>
 </html>
