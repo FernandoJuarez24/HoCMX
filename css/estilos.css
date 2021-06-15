@@ -129,8 +129,7 @@ body{
 	color: var(--negro);
 	border-radius:25px;
 	font-size: 20px;
-	transition: 0.5s;
-	cursor: pointer;
+	transition: 0.5s; 
 }
 .menu .contenedorLista .listaLinks li a.activado{
 	background:var(--rojoOscuro);
@@ -305,7 +304,7 @@ body{
 	padding:20px;
 	border-radius: 20px;
 	cursor:pointer;
-	transition: 0.5s;
+	transition: 200ms;
 }
 .datosGeek .contenedorDatos .contenedorTarjetas .tarjetaDatos .textoDatos:hover{
 	border: 2px solid var(--negro);
@@ -323,7 +322,7 @@ body{
 	font-size:25px;
 	text-align: center;
 	margin-bottom: 20px;
-	transition: 0.5s;
+	transition: 200ms;
 }
 .datosGeek .contenedorDatos .contenedorTarjetas .tarjetaDatos .textoDatos:hover h4{
 	color: var(--rojoClaro);
@@ -370,7 +369,6 @@ body{
 .nosotros .contenedorNosotros .textoNosotros{
 	margin: 80px auto;
 	width: 80%;
-	text-align: center;
 }
 .nosotros .contenedorNosotros .textoNosotros p{
 	text-align: center;
@@ -378,24 +376,6 @@ body{
 	color:var(--blanco);
 	line-height: 40px;
 	margin:30px 0px;
-}
-.nosotros .contenedorNosotros .textoNosotros .contacto{
-	width:170px;
-	height: 40px;
-	background: var(--blanco);
-	border-radius: 24px;
-	border:none;
-	outline: none;
-	font-size: 20px;
-	color:var(--rojo);
-	text-align:center;
-	margin:50px;
-	cursor: pointer;
-	transition: 0.5s;
-}
-.nosotros .contenedorNosotros .textoNosotros .contacto:hover{
-	background: var(--amarillo);
-	color:var(--rojoOscuro);
 }
 .nosotros .contenedorNosotros .textoNosotros .redesSociales{
 	width:100%;
@@ -408,10 +388,6 @@ body{
 	color:var(--blanco);
 	line-height: 40px;
 	margin:40px;
-	transition: 0.5s;
-}
-.nosotros .contenedorNosotros .textoNosotros .redesSociales a:hover{
-	color:var(--amarillo);
 }
 .nosotros .contenedorNosotros .galeriaNosotros{
 	width: 100%;
@@ -428,7 +404,6 @@ body{
 	border-radius: 10px;
 	cursor: pointer;
 	border: 5px solid var(--blanco);
-	transition: 0.5s;
 }
 /*Nosotros | Fin*/
 
@@ -578,4 +553,3 @@ body{
 	font-size: 20px;
 }*/
 /*Footer | Fin*/
-

@@ -4,7 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>House Of Comic MX | Home</title>
+	<title>House Of Comic MX</title>
+
+	<!--Descripcion-->
+	<meta name="descripcion" content="Somos una tienda Geek 'De Fans Para Fans', en donde encontraras artículos que van desde Playeras hasta Comcis firmados para que hagas crecer tu colección.">
+
+	<!--Keyword-->
+	<meta name="keywords" content="comics, playera hombre, playera mujer, funkos, videojuegos">
 
 	<!--Estilos-->
 	<link rel="stylesheet" href="css/estilos.css">
@@ -21,6 +27,12 @@
 	<!--Fuentes-->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<!--Animaciones-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--Favicon-->
+	<link rel="icon" href="icon.png" type="image/png" />
 </head>
 
 <body>
@@ -67,9 +79,9 @@
 					<li>
 						<a href="#nosotros">Nosotros</a>
 					</li>
-					<li>
-						<a onclick="mail()">Contacto</a>
-					</li>
+					<!--<li>
+						<a href="#contacto">Contacto</a>
+					</li>-->
 					<li>
 						<!--Instagram-->
 						<a href="https://www.instagram.com/houseofcomicgeekstore/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -104,7 +116,7 @@
 	<!--Menu Navegación | Fin-->
 
 
-	<!--Contenedor de toda la información de la Wweb-->
+	<!--Contenedor de toda la información de la Web-->
 	<main>
 		<!--Sección Productos | Inicio-->
 		<section class="productos" id='productos'>
@@ -117,7 +129,7 @@
 				</div>
 
 				<!--Categorias Productos-->
-				<div class="imgCategorias">
+				<div class="imgCategorias" data-aos="zoom-in" data-aos-duration="1000">
 					<img id='playeraHombre' onmouseover="cambioIMGHombre()" onmouseout='regresoIMGHombre()' onclick='linkHombre()' src="img/catProductos/01.jpg" alt="Playeras para Hombre">
 
 					<img id='playeraMujer' onmouseover="cambioIMGMujer()" onmouseout='regresoIMGMujer()' onclick='linkMujer()' src="img/catProductos/02.jpg" alt="Playeras para Mujer">
@@ -156,7 +168,7 @@
 				</div>
 
 				<!--Tarjetas Datos-->
-				<div class="contenedorTarjetas">
+				<div class="contenedorTarjetas" data-aos="fade-down" data-aos-duration="1000">
 
 					<!--Objeto Datos-->
 					<div class="tarjetaDatos">
@@ -231,12 +243,10 @@
 				</div>
 
 				<!--Texto de Nosotros-->
-				<div class="textoNosotros">
-					<p>Somos una tienda Geek "De Fans Para Fans", en donde encontraras artículos que van desde Playeras hasta Comics firmados para que hagas crecer tu colección.</p>
+				<div class="textoNosotros" data-aos="zoom-in" data-aos-duration="1000">
+					<p>Somos una tienda Geek "De Fans Para Fans", en donde encontraras artículos que van desde Playeras hasta Comcis firmados para que hagas crecer tu colección.</p>
 
 					<p>Ten la seguridad de que los artículos que adquieras son de excelente calidad y llegaran completamente seguros a la puerta de tu casa. Puedes contactarnos en todas nuetras redes sociales.</p>
-
-					<button class="contacto" onclick="mail()">Contacto</button>
 
 					<div class="redesSociales">
 					<!--Instagram-->
@@ -254,7 +264,7 @@
 				</div>
 
 				<!--Galeria-->
-				<div class="galeriaNosotros">
+				<div class="galeriaNosotros" data-aos="fade-up" data-aos-duration="1000">
 					<img id='adriPsycho' onmouseover="adriPsycho01()" onmouseout='adriPsycho02()' onclick="linkAdriPsycho()" src="img/imgNosotros/01.jpg" alt="Chica Leyendo Comics">
 					<img id='HoC' onmouseover="HoC01()" onmouseout='HoC02()' onclick="linkHoC()" src="img/imgNosotros/03.jpg" alt="Comics">
 					<img id='KB' onmouseover="kb01()" onmouseout='kb02()' onclick="linkKB()" src="img/imgNosotros/02.jpg" alt="Chico Leyendo Comics">
@@ -272,35 +282,6 @@
 
 		<!--EjeZ-->
 		<div class="footerPrincipal" >
-			<!--<div class="contenedorFooter" id='contacto'>
-				<!--Titulo Formulario-->
-				<!--<div class="tituloFormulario">
-					<h2>Formulario de Contacto</h2>
-					<hr>
-				</div>-->
-
-				<!--Formulario-->
-				<!--<div class="contenedorFormulario">
-					<form action="" id='formulario'>
-						<label for="usar">Nombre</label>
-						<input type="text" id='user' name='user' placeholder="Escribe tu Nombre">
-
-						<label for="email">Correo Electrónico</label>
-						<input type="email" id='email' name='email' placeholder="Escribe tu Correo Electronico">
-
-						<label for="mensaje">Escribe tu Mensaje</label>
-						<textarea name="mensaje" id="mensaje"></textarea>
-
-						<div class="enviar">
-							<button onclick='clickAqui()'>Enviar</button>
-						</div>
-
-						<div class="mensajeFormulario">
-							<p>Escribenos un mensaje y en breve te responderemos.</p>
-						</div>
-					</form>
-				</div>
-			</div>-->
 
 				<!--Texto del Footer-->
 			<div class="footerTexto">
@@ -316,6 +297,8 @@
 	<script src="js/productos.js"></script>
 	<script src="js/datos.js"></script>
 	<script src="js/nosotros.js"></script>
-	<script src="js/contacto.js"></script>
+	<!--Animaciones-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 </html>
